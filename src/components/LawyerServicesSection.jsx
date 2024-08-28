@@ -33,7 +33,7 @@ const ServiceItem = ({ Icon, text }) => (
 const LawyerServicesSection = () => {
   return (
     <div className='container mx-auto px-4 py-12'>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mb-12'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mb-14'>
         <div className='flex flex-col items-center text-center'>
           <Briefcase className='w-12 h-12 text-blue-500 mb-4' />
           <div>
@@ -49,7 +49,7 @@ const LawyerServicesSection = () => {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-2 md:grid-cols-3 gap-12'>
+      <div className='grid grid-cols-2 md:grid-cols-3  gap-y-14'>
         {services.map((service, index) => (
           <ServiceItem key={index} Icon={service.icon} text={service.text} />
         ))}
