@@ -1,7 +1,6 @@
 import { useState } from "react";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import SendIcon from "@mui/icons-material/Send";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { IoSend } from "react-icons/io5";
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -28,9 +27,9 @@ function Footer() {
   };
 
   return (
-    <footer className='bg-gray-900 text-white py-12 flex l items-center'>
-      <div>
-        <p>Напишіть свою електронну пошту і ми зв’яжемось з вами</p>
+    <footer className='bg-gray-900 text-white py-8 px-8 flex items-center justify-between'>
+      <div className="flex items-center gap-4">
+        <p className="text-sm">Напишіть свою електронну пошту і ми зв’яжемось з вами</p>
         <form
           onSubmit={handleSubmit}
           className='flex items-center mb-4 md:mb-0'
@@ -51,7 +50,7 @@ function Footer() {
           </button>
         </form>
       </div>
-      <div className='flex space-x-4'>
+      <div className='flex space-x-4 gap-3'>
         {" "}
         <a
           href='https://instagram.com'
@@ -59,7 +58,7 @@ function Footer() {
           rel='noopener noreferrer'
           className='hover:text-gray-300'
         >
-          <InstagramIcon style={{ fontSize: 24 }} />
+          <FaInstagram className="text-2xl" />
         </a>
         <a
           href='https://telegram.org'
@@ -67,7 +66,7 @@ function Footer() {
           rel='noopener noreferrer'
           className='hover:text-gray-300'
         >
-          <SendIcon style={{ fontSize: 24 }} />
+          <IoSend className="text-2xl" />
         </a>
         <a
           href='https://facebook.com'
@@ -75,7 +74,7 @@ function Footer() {
           rel='noopener noreferrer'
           className='hover:text-gray-300'
         >
-          <FacebookIcon style={{ fontSize: 24 }} />
+          <FaFacebook className="text-2xl" />
         </a>
       </div>
     </footer>

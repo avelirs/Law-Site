@@ -12,19 +12,21 @@ import "./index.css";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/position' element={<Position />} />
-          <Route path='/team' element={<Team />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/contacts' element={<Contacts />} />
-        </Routes>
-      </main>
-      <Footer />
+      
+        <Header />
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/position' element={<Position />} />
+            <Route path='/team' element={<Team />} />
+            <Route path='/services' element={<Services />} />
+            <Route path='/contacts' element={<Contacts />} />
+          </Routes>
+        </main>
+        <Footer />
     </BrowserRouter>
   );
 }
 
 export default App;
+      

@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className="flex justify-between items-center p-4 bg-white">
+    <header className="flex justify-between items-center p-2 bg-white">
       <div className="flex items-center w-1/4">
         <Link to="/" className="flex items-center">
           <img src="/logo.svg" alt="SMK Law Logo" className="mr-6 w-20 h-20" />
