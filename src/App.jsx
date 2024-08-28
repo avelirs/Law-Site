@@ -4,9 +4,9 @@ import Position from "./pages/Position";
 import Team from "./pages/Team";
 import Services from "./pages/Services";
 import Contacts from "./pages/Contacts";
-import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-
+import { Routes, Route } from "react-router-dom";
+import './index.css';
 
 function App() {
   return (
