@@ -5,7 +5,11 @@ function Header() {
     <header className='flex justify-between items-center p-2 bg-white'>
       <div className='flex items-center w-1/4'>
         <Link to='/' className='flex items-center'>
-          <img src='/logo.svg' alt='SMK Law Logo' className='mr-6 w-20 h-20' />
+          <img
+            src={import.meta.env.BASE_URL + "logo.svg"}
+            alt='SMK Law Logo'
+            className='mr-6 w-20 h-20'
+          />
           <h1 className='text-4xl font-open-sans-bold text-blue-600 tracking-wide'>
             <span className='text-gray-800'>Maks</span> Sibiliev
           </h1>
