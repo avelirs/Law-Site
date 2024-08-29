@@ -11,7 +11,7 @@ import "./index.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Law-Site'>
       <Header />
       <main className='relative h-[90vh] bg-gray-100'>
         <Routes>
