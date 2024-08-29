@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       
         <Header />
-        <main>
+        <main className="relative h-[90vh] bg-gray-100">
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/position' element={<Position />} />

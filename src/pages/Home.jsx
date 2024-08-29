@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Home() {
 
     return (
-        <div className="relative h-[90vh] bg-gray-100">
+        <>
         <img src="./main.jpg" alt="City Skyline" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white text-center p-4">
           <h2 className="font-roboto text-4xl mb-4 leading-relaxed text-white text-shadow shadow-black">
@@ -15,7 +15,7 @@ function Home() {
             ЗВ'ЯЗАТИСЬ
           </Link>
         </div>
-      </div>
+     </>
     )
 }
 
