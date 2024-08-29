@@ -1,7 +1,7 @@
 function Position() {
   return (
     <div>
-      <h1>Позиція</h1>
+      <h1 className='text-4xl font-bold text-center'>Позиція</h1>
     </div>
   );
 }
