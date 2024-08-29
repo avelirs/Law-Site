@@ -41,7 +41,10 @@ function Contacts() {
       <div className='flex flex-col md:flex-row justify-between gap-8 p-8 bg-white rounded-lg shadow-lg'>
         <div className='w-full md:w-7/12'>
           <h2 className='text-2xl font-bold mb-4'>Напишіть нам</h2>
-          <form onSubmit={handleSubmit} className='space-y-4 flex flex-col w-7/12'>
+          <form
+            onSubmit={handleSubmit}
+            className='space-y-4 flex flex-col w-7/12'
+          >
             <input
               type='text'
               name='name'
@@ -67,36 +70,44 @@ function Contacts() {
             />
             <button
               type='submit'
-              className='bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors w-1/4'
+              className='bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors w-1/4 h-11'
             >
               ВІДПРАВИТИ
             </button>
           </form>
         </div>
         <div className='w-full md:w-5/12'>
-          <h2 className="text-2xl font-bold mb-4">Зв'яжіться з нами</h2>
-          <div className="space-y-8">
-            <div className="flex items-center">
-              <Phone className="w-5 h-5 mr-2" />
-              <a href="tel:+380505860456" className="hover:text-blue-600 transition-colors">
+          <h2 className='text-2xl font-bold mb-4'>Зв'яжіться з нами</h2>
+          <div className='space-y-8'>
+            <div className='flex items-center'>
+              <Phone className='w-5 h-5 mr-2' />
+              <a
+                href='tel:+380505860456'
+                className='hover:text-blue-600 hover:underline transition-colors text-lg'
+              >
                 38 (050) 586 04 56
               </a>
             </div>
-            <div className="flex items-center">
-              <Mail className="w-5 h-5 mr-2" />
-              <a href="mailto:welcome@smk-law.com.ua" className="hover:text-blue-600 transition-colors">
-                welcome@smk-law.com.ua
+            <div className='flex items-center'>
+              <Mail className='w-5 h-5 mr-2' />
+              <a
+                href='mailto:sibilev.maksim@gmail.com'
+                className='hover:text-blue-600 hover:underline transition-colors text-lg'
+              >
+                sibilev.maksim@gmail.com
               </a>
             </div>
-            <div className="flex items-start">
-              <MapPin className="w-5 h-5 mr-2 mt-1" />
-              <a 
+            <div className='flex items-start'>
+              <MapPin className='w-5 h-5 mr-2 mt-1' />
+              <a
                 href="https://www.google.com/maps/search/?api=1&query=04119,+Київ,+вул.+Дерев'янська,+8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-600 transition-colors"
+                target='_blank'
+                rel='noopener noreferrer'
+                className='hover:text-blue-600 hover:underline transition-colors text-lg'
               >
-                04119, м. Київ,<br />вул. Дерев'янська, буд. 8, кім.22.
+                04119, м. Київ,
+                <br />
+                вул. Дерев'янська, буд. 8, кім.22.
               </a>
             </div>
           </div>
@@ -107,5 +118,3 @@ function Contacts() {
 }
 
 export default Contacts;
-
-
