@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <img
-        src='./main.webp'
+        src={import.meta.env.BASE_URL + "main.webp"}
         alt='City Skyline'
         className='w-full h-full object-cover'
       />
