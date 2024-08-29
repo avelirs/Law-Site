@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <img
-        src='./main.jpg'
+        src='./main.webp'
         alt='City Skyline'
         className='w-full h-full object-cover'
       />
