@@ -6,7 +6,9 @@ function Header() {
       <div className="flex items-center w-1/4">
         <Link to="/" className="flex items-center">
           <img src="/logo.svg" alt="SMK Law Logo" className="mr-6 w-20 h-20" />
-          <h1 className="text-3xl font-bold">MAKS Law</h1>
+          <h1 className="text-4xl font-open-sans-bold text-blue-600 tracking-wide">
+            <span className="text-gray-800">Maks</span> Sibiliev
+          </h1>
         </Link>
       </div>
       <nav className="flex-grow">
